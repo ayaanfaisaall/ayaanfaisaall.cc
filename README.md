@@ -22,7 +22,7 @@ To get a local copy up and running, follow these simple steps.
 ### Installation
 1. Clone the repo
 ``````bash
-git clone https://github.com/Ayaanfaisaall/ayaanfaisaall.cc
+git clone https://github.com/ayaanfaisaall/ayaanfaisaall.cc
 ``````
 
 2. Navigate to the directory
