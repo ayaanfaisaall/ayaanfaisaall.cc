@@ -1,15 +1,48 @@
-.root {
+
+.root-link {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 20px;
+}
+
+.root-link-name {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 19.2px;
     font-weight: 300;
     color: #ffffff;
-    text-decoration: none;
     opacity: 0.6;
     transition: opacity 0.3s ease, color 0.3s ease;
 }
 
-@media (max-width: 768px){
-    .root{
+.root-link-name::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../icons/link.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 6px;
+    vertical-align: baseline;
+}
+
+.root-link:hover .root-link-name {
+    opacity: 1;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .root-link-name {
         font-size: 16px;
     }
+
+    .root-link-name::after {
+        width: 13px;
+        height: 13px;
+    }
 }
+
